@@ -35,16 +35,7 @@ var typed = new Typed('.textline', {
     backDelay: 1000,
     loop: true
 });
-
-
-
-/*
-        Designed by: Jarlan Perez
-        Original image: https://www.artstation.com/artwork/VdBllN
-
-*/
-
-
+// 3D Room Graphics
 const h = document.querySelector("#h");
 const b = document.body;
 
@@ -60,3 +51,22 @@ let base = (e) => {
 }
 
 b.addEventListener("pointermove", base);
+
+// Contact Form
+function sendEmail() {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "hegdeishan10@gmail.com",
+        Password: "password",
+        To: 'hegdeishan10@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New Contact form enquiry",
+        Body: "Full Name: " + document.getElementById("name").value
+        + "<br> Email Address: " + document.getElementById("email").value
+        + "<br> Contact No.: " + document.getElementById("phone").value
+        + "<br> Subject: " + document.getElementById("subject").value
+        + "<br> Message: " + document.getElementById("message").value
+    }).then(
+        message => alert("Message sent successfully ")
+    );
+}

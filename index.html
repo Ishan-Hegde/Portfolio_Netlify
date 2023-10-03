@@ -539,7 +539,7 @@
     <!-- --------------------------Create a Contact-Section-------------------------- -->
     <section class="contact" id="contact">
         <h2 class="allheading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form onsubmit="sendEmail(); reset(); return false;">
             <div class="input-box">
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email address">
@@ -553,7 +553,7 @@
         </form>
     </section>
 
-    <!-- --------------------------Create a Contact-Section-------------------------- -->
+    <!-- --------------------------Create a Footer-Section-------------------------- -->
     <footer class="footer">
         <div class="text">
             <p>Copyright &copy; by Ishan Hegde || All Rights Reserved</p>
@@ -564,6 +564,8 @@
     </footer>
     <!-- changing text script -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- email script link-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- script link -->
     <script src="app.js"></script>
 </body>

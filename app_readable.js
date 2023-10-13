@@ -1,3 +1,24 @@
+// -----------------Create a scroll navbar active changer --------------------
+const navLinkEls = document.querySelectorAll('.nav__link');
+const sectionEls = document.querySelectorAll('section');
+
+let currentSection = 'home';
+window.addEventListener('scroll', () => {
+    sectionEls.forEach(sectionEl => {
+        if (window.scrollY >= sectionEl.offsetTop - 200) {
+            currentSection = sectionEl.id;
+        }
+    });
+
+    navLinkEls.forEach(navLinkEl => {
+        if (navLinkEl.href.includes(currentSection)) {
+            document.querySelector('.active').classList.remove('active');
+            navLinkEl.classList.add('active');
+        }
+    });
+
+});
+
 // -----------------Create Auto navbar scrolling-----------------
 const section = document.querySelectorAll('section')
 const navLink = document.querySelectorAll('header nav a')
@@ -19,6 +40,8 @@ window.onscroll = () => {
     header.classList.toggle("sticky", window.scrollY > 100)
     menubar.classList.remove('bx-x')
     navbar.classList.remove('active')
+
+
 };
 // -----------------Create a toggle changer --------------------
 let menubar = document.querySelector('#menu')
@@ -28,6 +51,9 @@ menubar.onclick = () => {
     navbar.classList.toggle('active')
 }
 
+
+
+// ----------------- Constant changing text --------------------
 var typed = new Typed('.textline', {
     strings: ['Web Developer.', 'Python Developer.', 'MERN Stack Developer.', 'Professional Footballer.'],
     typeSpeed: 30,
@@ -36,7 +62,7 @@ var typed = new Typed('.textline', {
     loop: true
 });
 
-// Contact Form
+// -----------------------Contact Form-------------------------
 function sendEmail() {
     Email.send({
         Host: "smtp.gmail.com",

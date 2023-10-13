@@ -16,19 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,700;1,600&display=swap"
         rel="stylesheet">
     <!-- bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <!-- boxicon link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- logo -->
     <link rel="stylesheet" href="favicon.ico">
 </head>
 
-<body class="p-3 mb-2 bg-black text-white">
+<body>
     <!-- --------------------------Create a Navbar-------------------------- -->
     <header class="header">
         <div class="logo-box">
@@ -37,11 +37,13 @@
         </div>
         <i class='bx bx-menu' id="menu"></i>
         <nav class="navbar">
-            <a href="#home" style="--clr:1" class="active">Home</a>
-            <a href="#about" style="--clr:2">About</a>
-            <a href="#experience" style="--clr:3">Experience</a>
-            <a href="#projects" style="--clr:4">Projects</a>
-            <a href="#contact" style="--clr:5">Contact</a>
+            <div class="nav__list">
+                <a href="#home" style="--clr:1" class="nav__link active">Home</a>
+                <a href="#about" style="--clr:2" class="nav__link">About</a>
+                <a href="#experience" style="--clr:3" class="nav__link">Experience</a>
+                <a href="#projects" style="--clr:4" class="nav__link">Projects</a>
+                <a href="#contact" style="--clr:5" class="nav__link">Contact</a>
+            </div>
         </nav>
     </header>
     <!-- --------------------------Create a Home-Section-------------------------- -->
@@ -55,16 +57,57 @@
                 delivering high-quality products on time and within budget.
             </p>
             <div class="social-media">
+                <a href="https://github.com/Ishan-Hegde"><i class='bx bxl-github'></i></a>
                 <a href="https://instagram.com/ishan.hegde?igshid=MzMyNGUyNmU2YQ=="><i class='bx bxl-instagram'></i></a>
-                <a href="https://twitter.com/ishan_hegde"><i class='bx bxl-twitter'></i></a>
                 <a href="https://www.linkedin.com/in/ishan-hegde-753947288/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/ishan_hegde"><i class='bx bxl-twitter'></i></a>
             </div>
             <a class="resume"
                 href="https://drive.google.com/drive/folders/1y-czppmBmvYFJ5sHursWwR1-nCktCi-f?usp=sharing">
-                <button class="btn">Download Resume</button>
+                <button class="btn" id="dwn_resume">Download Resume</button>
             </a>
         </div>
-        <!-- -------------------------------CSS 3d Room----------------------------------- -->
+
+        <!-- 3D -->
+        <div class="wrapper">
+            <div class="border-circle" id="one"></div>
+            <div class="border-circle" id="two"></div>
+            <div class="background-circle">
+                <div class="triangle-light"></div>
+                <div class="body"></div>
+                <span class="shirt-text">
+                    << /span>
+                        <span class="shirt-text">/</span>
+                        <span class="shirt-text">></span>
+            </div>
+            <div class="head">
+                <div class="ear" id="left"></div>
+                <div class="ear" id="right"></div>
+                <div class="hair-main">
+                    <div class="sideburn" id="left"></div>
+                    <div class="sideburn" id="right"></div>
+                    <div class="hair-top"></div>
+                </div>
+                <div class="face">
+                    <div class="hair-bottom"></div>
+                    <div class="nose"></div>
+                    <div class="eye-shadow" id="left">
+                        <div class="eyebrow"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="eye-shadow" id="right">
+                        <div class="eyebrow"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="mouth"></div>
+                    <div class="shadow-wrapper">
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="music-note" id="one">&#9835;</span>
+            <span class="music-note" id="two">&#9834;</span>
+        </div>
     </section>
 
     <!-- --------------------------Create an About-Section-------------------------- -->
@@ -220,7 +263,7 @@
     <!-- email script link-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- script link -->
-    <script src="app.js"></script>
+    <script src="app_readable.js"></script>
 </body>
 
 </html>

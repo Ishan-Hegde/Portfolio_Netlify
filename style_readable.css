@@ -1875,7 +1875,33 @@ form .btn:hover {
     }
 
     .about-img img {
-        width: 90vw;
+        width: 75vw;
+        margin-left: -41px;
+    }
+
+    .header {
+        padding: 3rem 16%;
+        margin-left: -51px;
+    }
+
+    .navbar {
+        padding: 1rem 15%;
+    }
+
+    section {
+        padding: 10rem 3% 7rem;
+    }
+
+    .wrapper {
+        margin: 7rem 19% 3rem 4%;
+    }
+
+    .triangle-light {
+        display: none;
+    }
+
+    .head {
+        margin-left: -67px;
     }
 
     .footer {

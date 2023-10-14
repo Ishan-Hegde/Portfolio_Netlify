@@ -17,6 +17,8 @@ body {
     background: black;
     color: white;
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 /* NAVBAR SECTION */
@@ -26,7 +28,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9% 2rem 12.5rem;
+    padding: 3rem 9% 2rem 12.5rem;
     background: black;
     display: flex;
     justify-content: space-between;
@@ -301,7 +303,7 @@ span {
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    width: 50vw;
+    width: 117vw;
 }
 
 .background-circle {
@@ -395,7 +397,7 @@ span {
 .hair-main {
     width: 220px;
     height: 0px;
-    background: #E7AB57;
+    background: #43382a;
     border-radius: 54px 54px 0px 0px;
     margin-left: -12px;
     margin-top: -10px;
@@ -412,7 +414,7 @@ span {
     height: 80px;
     opacity: 0;
     border-top-right-radius: 30px;
-    background: #E7AB57;
+    background: #544736;
     position: relative;
     top: -17px;
     left: 50%;
@@ -431,7 +433,7 @@ span {
     height: 50px;
     opacity: 0;
     border-bottom-left-radius: 25px;
-    background: #E7AB57;
+    background: #a18768;
     position: relative;
     top: -20px;
     left: 50%;
@@ -448,7 +450,7 @@ span {
 .sideburn {
     width: 8px;
     height: 25px;
-    background: #E7AB57;
+    background: #a18768;
     position: absolute;
     bottom: -25px;
     opacity: 0;
@@ -566,7 +568,7 @@ span {
 .eyebrow {
     width: 40px;
     height: 10px;
-    background: #E7AB57;
+    background: #685b49;
     position: absolute;
     top: -35px;
     left: 50%;
@@ -593,7 +595,7 @@ span {
     width: 20px;
     height: 28px;
     border-radius: 10px;
-    background: #334C68;
+    background: #3b5f87;
     position: absolute;
     top: -18px;
     left: 50%;
@@ -1638,7 +1640,7 @@ span {
 }
 
 .projects-box .projects-head h4 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .projects-head p {
@@ -1751,7 +1753,7 @@ form .btn:hover {
 
 @media (max-width:991px) {
     .header {
-        padding: 3rem 3%;
+        padding: 3rem 8%;
     }
 
     .experience {
@@ -1856,6 +1858,10 @@ form .btn:hover {
 @media(max-width:450px) {
     html {
         font-size: 50%;
+    }
+
+    .wrapper {
+        width: 92vw;
     }
 
     .input-box input {

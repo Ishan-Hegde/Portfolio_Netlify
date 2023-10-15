@@ -1756,6 +1756,11 @@ form .btn:hover {
         padding: 3rem 8%;
     }
 
+    .header .logo-box {
+
+        margin-left: -6rem;
+    }
+
     .experience {
         margin-bottom: 9rem;
     }
@@ -1780,9 +1785,12 @@ form .btn:hover {
 
 @media(max-width:768px) {
     #menu {
+        margin-left: 75rem;
+        position: absolute;
         display: block;
+        top: 3rem;
     }
-
+    
     .navbar {
         position: absolute;
         left: 0;
@@ -1808,6 +1816,8 @@ form .btn:hover {
 
     .home {
         flex-direction: column-reverse;
+        min-width: 94.9rem;
+
     }
 
     .home-detail h1 {
@@ -1828,12 +1838,15 @@ form .btn:hover {
     }
 
     .about {
+        display: block;
         flex-direction: column;
         min-height: 90vh;
+        min-width: 94.9rem;
     }
 
     .about .about-img {
         width: 55vw;
+        margin-left: 21rem;
     }
 
     .about-img img {
@@ -1847,18 +1860,115 @@ form .btn:hover {
     .projects .projects-section {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    
+
+    .wrapper {
+        top: 8rem;
+        margin: 0rem 5% 10rem 4%;
+    }
+
+    .border-circle {
+        display: none;
+    }
+
+    .header {
+        padding: 2rem 11% 2rem 11%;
+    }
+
+    .shirt-text {
+        top: 50px;
+        left: 149px;
+    }
+
+    .experience {
+        min-width: 94.9rem;
+    }
+
+    .projects {
+        min-width: 94.9rem;
+    }
+
+    .contact {
+        min-width: 94.9rem;
+    }
+
+    .footer {
+        min-width: 94.9rem;
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
+
 
 @media (max-width: 617px) {
     .projects .projects-section {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #menu {
+        /* margin-left: 5rem; */
+        position: absolute;
+        left: 52rem;
+        top: 3rem;
+    }
+
+    .wrapper {
+        top: 8rem;
+        margin: 0rem 0% 10rem 4%;
+    }
+
+    .border-circle {
+        display: none;
+    }
+
+    .header {
+        padding: 2rem 11% 2rem 11%;
+    }
+
+    .header .logo-box {
+        margin-left: -2rem;
+    }
+
+    .shirt-text {
+        top: 50px;
+        left: 149px;
+    }
+
+    .about {
+        min-width: 100rem;
+    }
+
+    .experience {
+        min-width: 60.9rem;
+    }
+
+    .projects {
+        min-width: 60.9rem;
+    }
+
+    .contact {
+        min-width: 60.9rem;
+    }
+
+    .footer {
+        min-width: 60.9rem;
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }
 
 @media(max-width:450px) {
     html {
         font-size: 50%;
-        /* scroll-behavior: auto; */
     }
 
     .wrapper {
@@ -1871,7 +1981,7 @@ form .btn:hover {
     }
 
     .shirt-text {
-        left: 98px;
+        left: 100px;
         top: -3rem;
     }
 
@@ -1898,7 +2008,7 @@ form .btn:hover {
     }
 
     .about {
-        width: 48rem;
+        width: 55rem;
     }
 
     .about-img img {
@@ -1976,9 +2086,6 @@ form .btn:hover {
 }
 
 @media (max-width:365px) {
-    html {
-        overflow-x: hidden;
-    }
 
     .home-detail h3 {
         font-size: 2.1rem;

@@ -1870,8 +1870,39 @@ form .btn:hover {
 }
 
 @media (max-width:365px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .home-detail h3 {
+        font-size: 2.1rem;
+    }
+
+    .projects {
+        min-width: 45.9rem;
+    }
+
+    .head {
+        width: 190px;
+        height: 250px;
+        top: 27rem;
+    }
+
+    .body {
+        top: 175px;
+    }
+
+    .shirt-text {
+        left: 99px;
+        top: -1rem;
+    }
+
     .home-img img {
         width: 90vw;
+    }
+
+    .about {
+        width: 46rem;
     }
 
     .about-img img {
@@ -1881,15 +1912,17 @@ form .btn:hover {
 
     .header {
         padding: 3rem 16%;
-        margin-left: -51px;
+        margin-left: -40px;
+        position: absolute;
     }
 
     .navbar {
-        padding: 1rem 15%;
+        padding: 1rem 7%;
+        margin: 3rem 0 0 6rem;
     }
 
     section {
-        padding: 10rem 3% 7rem;
+        padding: 10rem 3% 7rem 4%;
     }
 
     .wrapper {
@@ -1904,6 +1937,14 @@ form .btn:hover {
         margin-left: -67px;
     }
 
+    .music-note#one {
+        margin-left: -112px;
+    }
+
+    .music-note#two {
+        margin-left: 139px;
+    }
+
     .footer {
         flex-direction: column-reverse;
     }
@@ -1911,5 +1952,33 @@ form .btn:hover {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+
+    .background-circle {
+        width: 300px;
+        height: 300px;
+        left: 3rem;
+        top: 7rem;
+        margin-bottom: 8rem;
+    }
+
+    .music-note {
+        font-size: 120px;
+    }
+
+    .header .logo-box {
+        position: absolute;
+        top: 2rem;
+    }
+
+    #menu {
+        position: absolute;
+        left: 44rem;
+        top: 3.8rem;
+    }
+
+
+    .border-circle {
+        display: none;
     }
 }

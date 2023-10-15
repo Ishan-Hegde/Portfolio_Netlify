@@ -16,7 +16,6 @@ html {
 body {
     background: black;
     color: white;
-    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
 }
@@ -1790,7 +1789,7 @@ form .btn:hover {
         display: block;
         top: 3rem;
     }
-    
+
     .navbar {
         position: absolute;
         left: 0;
@@ -1861,7 +1860,7 @@ form .btn:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    
+
 
     .wrapper {
         top: 8rem;
@@ -1967,9 +1966,9 @@ form .btn:hover {
 }
 
 @media(max-width:450px) {
-    html {
+    /* html {
         font-size: 50%;
-    }
+    } */
 
     .wrapper {
         width: 91vw;
@@ -2086,23 +2085,57 @@ form .btn:hover {
 }
 
 @media (max-width:365px) {
+    html {
+        font-size: 50%;
+        height: 100vh;
+        width: 100vw
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .body {
+        top: 175px;
+    }
+
+    .about {
+        width: 46rem;
+        max-width: 36rem;
+    }
+
+    .contact {
+        min-width: 38.9rem;
+    }
+
+    .about-img img {
+        /* width: 75vw; */
+        margin-left: -140px;
+    }
+
+    .about-section p {
+        font-size: 1.6rem;
+        margin: 2rem 60rem 4rem 0rem;
+    }
 
     .home-detail h3 {
-        font-size: 2.1rem;
+        font-size: 2rem;
+    }
+
+    .home-detail p {
+        margin-right: 55rem;
     }
 
     .projects {
-        min-width: 45.9rem;
+        min-width: 27.9rem;
     }
 
     .head {
         width: 190px;
         height: 250px;
         top: 27rem;
-    }
-
-    .body {
-        top: 175px;
+        margin-left: -67px;
+        margin-right: 54rem;
     }
 
     .shirt-text {
@@ -2114,40 +2147,32 @@ form .btn:hover {
         width: 90vw;
     }
 
-    .about {
-        width: 46rem;
-    }
-
-    .about-img img {
-        width: 75vw;
-        margin-left: -41px;
-    }
-
     .header {
-        padding: 3rem 16%;
-        margin-left: -40px;
+        padding: 5rem 32%;
+        margin-left: -77px;
         position: absolute;
+        width: 49rem;
     }
 
     .navbar {
-        padding: 1rem 7%;
-        margin: 3rem 0 0 6rem;
+        padding: 0rem 0% 0rem 4%;
+        margin: -1rem 0px 0px 10rem;
     }
 
     section {
         padding: 10rem 3% 7rem 4%;
     }
 
+    .experience {
+        min-width: 39.9rem;
+    }
+
     .wrapper {
-        margin: 7rem 19% 3rem 4%;
+        margin: -4rem 69% 10rem 0;
     }
 
     .triangle-light {
         display: none;
-    }
-
-    .head {
-        margin-left: -67px;
     }
 
     .music-note#one {
@@ -2160,6 +2185,7 @@ form .btn:hover {
 
     .footer {
         flex-direction: column-reverse;
+        min-width: 39.9rem;
     }
 
     .footer p {
@@ -2185,8 +2211,9 @@ form .btn:hover {
     }
 
     #menu {
+        display: block;
         position: absolute;
-        left: 44rem;
+        margin-left: 1px;
         top: 3.8rem;
     }
 

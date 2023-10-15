@@ -2115,7 +2115,7 @@ form .btn:hover {
 
     .about-section p {
         font-size: 1.6rem;
-        margin: 2rem 58rem 2rem 0rem;
+        margin: 2rem 56rem 2rem 0rem;
     }
 
     .home-detail h3 {
@@ -2151,7 +2151,7 @@ form .btn:hover {
         padding: 5rem 32%;
         margin-left: -77px;
         position: absolute;
-        width: 49.6rem;
+        width: 51.6rem;
     }
 
     .navbar {
@@ -2168,7 +2168,7 @@ form .btn:hover {
     }
 
     .wrapper {
-        margin: -4rem 67% 10rem 0;
+        margin: -4rem 63% 10rem 0;
     }
 
     .triangle-light {
@@ -2213,7 +2213,7 @@ form .btn:hover {
     #menu {
         display: block;
         position: absolute;
-        margin-left: 1px;
+        margin-left: 8px;
         top: 3.8rem;
     }
 

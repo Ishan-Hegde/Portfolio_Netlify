@@ -10,10 +10,10 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
     background: black;
     color: white;
     height: 100%;
@@ -2168,7 +2168,7 @@ form .btn:hover {
     }
 
     .wrapper {
-        margin: -4rem 69% 10rem 0;
+        margin: -4rem 67% 10rem 0;
     }
 
     .triangle-light {

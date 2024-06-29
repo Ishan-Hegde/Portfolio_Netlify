@@ -55,7 +55,7 @@ menubar.onclick = () => {
 
 // ----------------- Constant changing text --------------------
 var typed = new Typed('.textline', {
-    strings: ['Web Developer.', 'Python Developer.', 'MERN Stack Developer.', 'Professional Footballer.'],
+    strings: ['Software Developer.', 'App Developer.', 'Web Developer.', 'Professional Footballer.'],
     typeSpeed: 30,
     backSpeed: 30,
     backDelay: 1000,
